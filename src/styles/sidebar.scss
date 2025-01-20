@@ -1,0 +1,54 @@
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 320px;
+    height: 100%;
+    background-color: red;
+    border: 4px solid black;
+   
+    transition: width 0.3s ease;
+
+    header {
+      display: flex;
+      justify-content: space-between;      
+      .logo-and-text {
+        display: flex;
+align-items: center;        
+        gap: 10px;
+        img {
+          width: 40px;
+          height: 40px;
+          border-radius: 10px;
+        }
+  
+        p{
+          font-size: 22px;
+        }
+      }
+    }
+}
+  
+.sidebar-desactive {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  transition: grid-template-columns 0.3s ease;  
+  height: 100%;
+  background-color: red;
+  border: 4px solid black;
+  grid-template-columns: 0fr;
+  width: 20px;
+  transition: width 0.3s ease; /* Animación suave cuando se cambia la posición */
+}
+
+button {
+  background-color: blue;
+  color: white;
+  border: none;
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
+}

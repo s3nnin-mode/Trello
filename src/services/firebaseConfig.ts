@@ -55,7 +55,7 @@ class Firebase {
           console.log('Datos del usuario subidos');
           
           return 'Registro exitoso';
-        } catch(error) {
+        } catch(error: any) {
           if (error.code === 'auth/email-already-in-use') {
             console.error('The email is already registered.');
             return 'The email is already registered.'
